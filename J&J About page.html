@@ -1,0 +1,285 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .class2 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+
+      #sophia1 {
+        width: 100px;
+        height: 100px;
+      }
+
+      #myNavbar {
+        margin-top: 30px;
+      }
+      #navigation {
+        background-color: #fff;
+      }
+      .input-group {
+        width: 70%;
+        margin: 0 auto
+      }
+      .classname {
+        background-color: #6bcd87;
+        padding: 50px;
+        text-align: center;
+        color: white;
+      }
+
+      .classname-footer {
+        background-color: #6bcd87;
+        padding: 50px;
+        text-align: center;
+        color: white;
+      }
+      .classname1 {
+        background-color: #7ad293;
+        padding: 30px;
+        color: white;
+      }
+      .classname2 {
+        background-color: #dddee0;
+        padding: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+
+
+
+      .classname3 {
+        border: 1px solid silver;
+        border-radius: 10px;
+      }
+      .no__dot li {
+        list-style-type: none;
+      }
+      .class8 {
+        font-size: 24px;
+      }
+      .glyphicon-check {
+        font-size: 24px;
+        color: #5fcf80;
+      }
+      .class11::after {
+        content: "";
+        width: 120px;
+        height: 1px;
+        display: inline-block;
+        background: blue;
+        margin: 4px 10px;
+      }
+      .class11 {
+        margin-left: 400px;
+      }
+      .class14 {
+        margin-left: 400px;
+        font-size: 40px;
+      }
+      .class9 {
+        color: white;
+        background-color: #6bcd87;
+        border-radius: 300px;
+        margin-top: -8px;
+      }
+    </style>
+  </head>
+  <body>
+  <!--header-->
+  <div class="navbar navbar-default navbar-fixed-top" id="navigation">
+    <div class="container">
+      <div class="navbar-header"> <img id="sophia1" src="data:image/png;base64,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">
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="J&J%20Academy%20Home.html">
+              <p>HOME</p>
+            </a>
+          </li>
+          <li class="">
+            <a href="J&J%20About%20page.html">
+              <p>ABOUT</p>
+            </a>
+          </li>
+          <li>
+            <a href="J&J%20Academy%20All%20Cources.html">
+              <p>COURSES</p>
+            </a>
+          </li>
+          <li>
+            <a href="J&J%20Academy%20Trainers.html">
+              <p>TRAINERS</p>
+            </a>
+          </li>
+          <li>
+            <a href="J&J%20Events.html">
+              <p>EVENTS</p>
+            </a>
+          </li>
+<!--          <li>-->
+<!--            <a href="#pricing soph">-->
+<!--              <p>PRICING</p>-->
+<!--            </a>-->
+<!--          </li>-->
+          <li>
+            <a href="J&J%20Academy%20All%20Contact.html">
+              <p>CONTACT</p>
+            </a>
+          </li>
+          <li>
+            <a target="" href="#"> <button class="form-control class9">Get Started</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--body-->
+    <div class="container-fluid" style="margin-top: 100px">
+      <div class="classname">
+        <h1><strong>About Us</strong></h1>
+        <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+      </div>
+      <div class="classname1">
+        <p><strong>Home / About Us</strong></p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3><strong>Voluptatem dignissimos provident quasi corporis</strong></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <ul class="no__dot">
+            <li class="class8">
+              <span class="glyphicon glyphicon-check"></span>
+              <span >Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+            </li>
+            <li class="class8">
+              <span class="glyphicon glyphicon-check"></span>
+              <span >Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+            </li>
+            <li class="class8">
+              <span class="glyphicon glyphicon-check"></span>
+              <span >Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6"> <img width="100%" src="https://bootstrapmade.com/demo/templates/Mentor/assets/img/about-2.jpg">
+        </div>
+      </div>
+      <div class="row classname2">
+        <div class="col-md-3 text-center">
+          <h1>1</h1>
+          <h2>Students</h2>
+        </div>
+        <div class="col-md-3 text-center">
+          <h1>12</h1>
+          <h2>courses</h2>
+        </div>
+        <div class="col-md-3 text-center">
+          <h1>123</h1>
+          <h2>events</h2>
+        </div>
+        <div class="col-md-3 text-center">
+          <h1>1234</h1>
+          <h2>teachers</h2>
+        </div>
+      </div>
+      <div class="classname">
+        <h2>What they are saying</h2>
+      </div>
+      <div class="row">
+        <div id="testimonialls">
+          <div id="testimonialls">
+            <h2 class="class11">Testimonials</h2>
+            <p class="class14"><strong>What are they saying</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <!--footer-->
+  <div class="container-fluid" style="width: 80%;margin-top: 50px">
+    <div style="" class="row">
+      <div class="col-md-3">
+        <h3><strong>Mentor</strong></h3>
+        <p>A108 Adam Street</p>
+        <p>New York, NY 535022</p>
+        <p>United States</p>
+        <p><strong>Phone:</strong> +1 5589 55488 55</p>
+        <p><strong>Email:</strong> info@example.com</p>
+      </div>
+      <div class="col-md-3">
+        <h3><strong>Useful Links</strong></h3>
+        <div> <a target="_blank" href="URL">
+          <p>Home</p>
+        </a></div>
+        <div> <a target="_blank" href="URL">
+          <p>About us</p>
+        </a></div>
+        <div> <a target="_blank" href="URL">
+          <p>Services</p>
+        </a></div>
+        <div> <a target="_blank" href="URL">
+          <p>Terms of Service</p>
+        </a></div>
+        <div> <a target="_blank" href="URL">
+          <p>Privacy Policy</p>
+        </a></div>
+      </div>
+      <div class="col-md-3">
+        <h3><strong>Our services</strong></h3>
+        <div> <a target="_blank" href="URL"> <span >></span>
+          <span >Web Design</span>
+        </a></div>
+        <div> <a target="_blank" href="URL"> <span >></span>
+          <span >Web Development</span>
+        </a></div>
+        <div> <a target="_blank" href="URL"> <span >></span>
+          <span >Product Management</span>
+        </a></div>
+        <div> <a target="_blank" href="URL">  <span >></span>
+          <span >Marketing</span>
+        </a></div>
+        <div> <a target="_blank" href="URL"> <span >></span>
+          <span >Graphic Design</span>
+        </a></div>
+      </div>
+      <div class="col-md-3">
+        <h3><strong>Join Our Newsletter</strong></h3>
+        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+        <form>
+          <div class="input-group" style="width: 100%">
+            <input type="email" class="form-control" placeholder="Email">
+            <div class="input-group-btn"> <button class="btn btn-success">Subscribe</button>
+          </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div style="" class="row">
+      <div class="col-md-3">
+        <p>© Copyright <strong>Sophia</strong>. <br>All Rights Reserved Designed by <strong>ITS</strong>.</p>
+      </div>
+      <div class="col-md-3">
+        </div>
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-3">
+        <div class="">
+          <span style="background-color: orange; border-radius:50%; padding: 10px; margin-right: 10px;" class="glyphicon glyphicon-earphone"></span>
+          <span style="background-color: orange; border-radius:50%; padding: 10px; margin-right: 10px;" class="glyphicon glyphicon-envelope"></span>
+          <span style="background-color: orange; border-radius:50%; padding: 10px; margin-right: 10px;" class="glyphicon glyphicon-phone"></span>
+          <span style="background-color: orange; border-radius:50%; padding: 10px; margin-right: 10px;" class="glyphicon glyphicon-send"></span>
+          <span style="background-color: orange; border-radius:50%; padding: 10px; margin-right: 10px;" class="	glyphicon glyphicon-comment"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
